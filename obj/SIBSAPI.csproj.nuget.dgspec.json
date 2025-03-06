@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SIBS\\Prakash_SIBS\\SIBSAPI.csproj": {}
+    "E:\\SIBS\\git\\SIBSAPI.csproj": {}
   },
   "projects": {
-    "E:\\SIBS\\Prakash_SIBS\\SIBSAPI.csproj": {
+    "E:\\SIBS\\git\\SIBSAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SIBS\\Prakash_SIBS\\SIBSAPI.csproj",
+        "projectUniqueName": "E:\\SIBS\\git\\SIBSAPI.csproj",
         "projectName": "SIBSAPI",
-        "projectPath": "E:\\SIBS\\Prakash_SIBS\\SIBSAPI.csproj",
+        "projectPath": "E:\\SIBS\\git\\SIBSAPI.csproj",
         "packagesPath": "C:\\Users\\Prakash\\.nuget\\packages\\",
-        "outputPath": "E:\\SIBS\\Prakash_SIBS\\obj\\",
+        "outputPath": "E:\\SIBS\\git\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,6 +81,16 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
             }
           },
           "imports": [
