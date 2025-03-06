@@ -1,0 +1,431 @@
+[
+  {
+    "ContainingType": "SIBSAPI.Controllers.ApplicationIncomeController",
+    "Method": "AddApplication",
+    "RelativePath": "api/ApplicationIncome/add-Application-income",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ApplicationIncome",
+        "Type": "SIBSAPI.Models.ApplicationIncome",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.ApplicationIncomeController",
+    "Method": "deleteApplication",
+    "RelativePath": "api/ApplicationIncome/Delete-Application-income",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ApplicationIncome",
+        "Type": "SIBSAPI.Models.ApplicationIncome",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "SIBSAPI.DTOs.TLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.AuthController",
+    "Method": "TT_Login",
+    "RelativePath": "api/Auth/Test_login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "SIBSAPI.DTOs.TLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.DayDeductionController",
+    "Method": "AddDayDeduction",
+    "RelativePath": "api/DayDeduction/add-DayDeduction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Deduction",
+        "Type": "SIBSAPI.Models.Deduction",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.DayDeductionController",
+    "Method": "FetchEmployeesDrodown",
+    "RelativePath": "api/DayDeduction/Fetch-DayDeduction-Employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Period",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profcen_cd",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.DayDetailsController",
+    "Method": "AddDayDetails",
+    "RelativePath": "api/DayDetails/add-DayDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DAYS_MST",
+        "Type": "SIBSAPI.Models.DAYS_MST",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.DayDetailsController",
+    "Method": "FetchEmployeesDrodown",
+    "RelativePath": "api/DayDetails/Fetch-DayDetails-Employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Period",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profcen_cd",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.DayDetailsController",
+    "Method": "FetchPublicHoliday",
+    "RelativePath": "api/DayDetails/Fetch-PublicHoliday-Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Period",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.DayDetailsController",
+    "Method": "FetchWeekOff",
+    "RelativePath": "api/DayDetails/Fetch-weekoff-Daydetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Period",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmpNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.EmployeeController",
+    "Method": "AddEmployee",
+    "RelativePath": "api/Employee/add-employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "SIBSAPI.Models.PersonalMst",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.GradePaymentDetailsController",
+    "Method": "AddPaymentDetailsGradeWise",
+    "RelativePath": "api/GradePaymentDetails/add-PaymentDetails-GradeWise",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PAYMASTER",
+        "Type": "SIBSAPI.Models.PAY_MASTER",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.GradePaymentDetailsController",
+    "Method": "deletePaymentDetails",
+    "RelativePath": "api/GradePaymentDetails/Delete-PaymentDetails-GradeWise",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PAY_MASTER",
+        "Type": "SIBSAPI.Models.PAY_MASTER",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.GradePaymentDetailsController",
+    "Method": "FetchGradePaymentDetails",
+    "RelativePath": "api/GradePaymentDetails/Fetch-Grade-PaymentDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.GradePaymentDetailsController",
+    "Method": "GetUpdatePaymentDetailsGradeWise",
+    "RelativePath": "api/GradePaymentDetails/GetUpdate-PaymentDetails-GradeWise",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grade",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.SalaryController",
+    "Method": "AddSalary",
+    "RelativePath": "api/Salary/add-Salary-Details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salaryDetails",
+        "Type": "SIBSAPI.Models.EmpMst",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.SalaryController",
+    "Method": "GetFetchLabels_SalaryDetails",
+    "RelativePath": "api/Salary/FetchLabels-SalaryDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Profcen_Code",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.SalaryController",
+    "Method": "FetchYEmp_SalaryWages",
+    "RelativePath": "api/Salary/FetchYEmployees-SalaryDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.SalaryController",
+    "Method": "GetUpdateSalaryWagesDetails",
+    "RelativePath": "api/Salary/GetUpdate-SalaryWagesDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EMP_NO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.SalaryController",
+    "Method": "GetSalaryDetailsPagination",
+    "RelativePath": "api/Salary/SalaryDetails-Pagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchDepartment",
+    "RelativePath": "Fetch-Department",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchDesignation",
+    "RelativePath": "Fetch-Designation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchEmployeesDrodown",
+    "RelativePath": "Fetch-Employees-dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchGrade",
+    "RelativePath": "Fetch-Grade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchLocation",
+    "RelativePath": "Fetch-Location",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchPeriodAsync",
+    "RelativePath": "Fetch-Period",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Profcen_cd",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchProject",
+    "RelativePath": "Fetch-Project",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchReferByAndReport",
+    "RelativePath": "Fetch-ReferByReporting",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NameORCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchState",
+    "RelativePath": "Fetch-State",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SIBSAPI.Controllers.MasterController",
+    "Method": "FetchUnion",
+    "RelativePath": "Fetch-Union",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

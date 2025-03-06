@@ -1,0 +1,2682 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SIBSAPI",
+    "description": "API for SIBS Project",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/ApplicationIncome/add-Application-income": {
+      "post": {
+        "tags": [
+          "ApplicationIncome"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationIncome"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationIncome"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationIncome"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ApplicationIncome/Delete-Application-income": {
+      "delete": {
+        "tags": [
+          "ApplicationIncome"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationIncome"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationIncome"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationIncome"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/Test_login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TLogin"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TLogin"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TLogin"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TLogin"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TLogin"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TLogin"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DayDeduction/add-DayDeduction": {
+      "post": {
+        "tags": [
+          "DayDeduction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Deduction"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Deduction"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Deduction"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DayDeduction/Fetch-DayDeduction-Employees": {
+      "get": {
+        "tags": [
+          "DayDeduction"
+        ],
+        "parameters": [
+          {
+            "name": "Period",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profcen_cd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DayDetails/add-DayDetails": {
+      "post": {
+        "tags": [
+          "DayDetails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DAYS_MST"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DAYS_MST"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DAYS_MST"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DayDetails/Fetch-DayDetails-Employees": {
+      "get": {
+        "tags": [
+          "DayDetails"
+        ],
+        "parameters": [
+          {
+            "name": "Period",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profcen_cd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DayDetails/Fetch-PublicHoliday-Count": {
+      "get": {
+        "tags": [
+          "DayDetails"
+        ],
+        "parameters": [
+          {
+            "name": "Period",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DayDetails/Fetch-weekoff-Daydetails": {
+      "get": {
+        "tags": [
+          "DayDetails"
+        ],
+        "parameters": [
+          {
+            "name": "Period",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "EmpNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Employee/add-employee": {
+      "post": {
+        "tags": [
+          "Employee"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonalMst"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonalMst"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonalMst"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GradePaymentDetails/Fetch-Grade-PaymentDetails": {
+      "get": {
+        "tags": [
+          "GradePaymentDetails"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GradePaymentDetails/add-PaymentDetails-GradeWise": {
+      "post": {
+        "tags": [
+          "GradePaymentDetails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PAY_MASTER"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PAY_MASTER"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PAY_MASTER"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GradePaymentDetails/Delete-PaymentDetails-GradeWise": {
+      "delete": {
+        "tags": [
+          "GradePaymentDetails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PAY_MASTER"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PAY_MASTER"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PAY_MASTER"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GradePaymentDetails/GetUpdate-PaymentDetails-GradeWise": {
+      "post": {
+        "tags": [
+          "GradePaymentDetails"
+        ],
+        "parameters": [
+          {
+            "name": "grade",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Department": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Grade": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Designation": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-ReferByReporting": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "NameORCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Location": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Project": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Union": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-State": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Employees-dropdown": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Fetch-Period": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "Profcen_cd",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salary/SalaryDetails-Pagination": {
+      "get": {
+        "tags": [
+          "Salary"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salary/FetchLabels-SalaryDetails": {
+      "get": {
+        "tags": [
+          "Salary"
+        ],
+        "parameters": [
+          {
+            "name": "Profcen_Code",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salary/FetchYEmployees-SalaryDetails": {
+      "get": {
+        "tags": [
+          "Salary"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salary/add-Salary-Details": {
+      "post": {
+        "tags": [
+          "Salary"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpMst"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpMst"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpMst"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Salary/GetUpdate-SalaryWagesDetails": {
+      "post": {
+        "tags": [
+          "Salary"
+        ],
+        "parameters": [
+          {
+            "name": "EMP_NO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApplicationIncome": {
+        "type": "object",
+        "properties": {
+          "profcen_Cd": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "basic": {
+            "type": "boolean"
+          },
+          "fix_basic": {
+            "type": "boolean"
+          },
+          "da": {
+            "type": "boolean"
+          },
+          "var_DA": {
+            "type": "boolean"
+          },
+          "lta": {
+            "type": "boolean"
+          },
+          "medical_allow": {
+            "type": "boolean"
+          },
+          "child_edu": {
+            "type": "boolean"
+          },
+          "uniform": {
+            "type": "boolean"
+          },
+          "hra": {
+            "type": "boolean"
+          },
+          "conv_allow": {
+            "type": "boolean"
+          },
+          "canteen": {
+            "type": "boolean"
+          },
+          "misc1": {
+            "type": "boolean"
+          },
+          "misc2": {
+            "type": "boolean"
+          },
+          "misc3": {
+            "type": "boolean"
+          },
+          "misc4": {
+            "type": "boolean"
+          },
+          "magazine": {
+            "type": "boolean"
+          },
+          "driver": {
+            "type": "boolean"
+          },
+          "guest": {
+            "type": "boolean"
+          },
+          "soft_furnishing": {
+            "type": "boolean"
+          },
+          "misc5": {
+            "type": "boolean"
+          },
+          "misc6": {
+            "type": "boolean"
+          },
+          "misc7": {
+            "type": "boolean"
+          },
+          "misc8": {
+            "type": "boolean"
+          },
+          "misc9": {
+            "type": "boolean"
+          },
+          "n_misc1": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc2": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc3": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc4": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_magazine": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_driver": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_guest": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_soft_furnishing": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc5": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc6": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc7": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc8": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_misc9": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_DA": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Days_Misc1": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Days_Misc2": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Days_Misc3": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Days_Misc4": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Deduction_Misc1": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Deduction_Misc2": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Deduction_Misc3": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Deduction_Misc4": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Soc_Contri": {
+            "type": "string",
+            "nullable": true
+          },
+          "n_Soc_Loan": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DAYS_MST": {
+        "type": "object",
+        "properties": {
+          "emp_no": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "cl": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sl": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pl": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "oT_hrs": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "encash_CL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "encash_SL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "encash_PL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arrear_days": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_earn1": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_earn2": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "other_income": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "period": {
+            "maxLength": 6,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "week_off": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arr_CL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arr_SL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arr_PL": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arr_OT": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "present_days": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "esi_leave": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "lw_a": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ph": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profcen_cd": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "lw_un": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "coff": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "att_Bonus_Days": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_earn3": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_earn4": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "conv_Allow": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "lta": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "medical_Allow": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "magazine": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "driver": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "guest": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "soft_Furnishing": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "remark": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "half_days": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ml": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arR_ML": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "earn_hours": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "qbdays": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wsaadays": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wsabdays": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wsacdays": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ld": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Deduction": {
+        "type": "object",
+        "properties": {
+          "emp_no": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "period": {
+            "maxLength": 6,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "advance_amt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "soc_contri": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "soc_loan": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "canteen": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "travel": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "hdfC_loan": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "liC_loan": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "other_loan": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_deduc1": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_deduc2": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "itax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "other_recovery": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "liC_inst": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profcen_cd": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sal_recovery": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_deduc3": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc_deduc4": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "remark": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmpMst": {
+        "type": "object",
+        "properties": {
+          "emP_NO": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dept_code": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "profit_center": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dm_indicator": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tech_category": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pf_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pf_no": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "esic_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "esic_no": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "ot_flag": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "status": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "temp_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "confirm_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "prob_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "basic": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fiX_BASIC": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "da": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vaR_DA": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "conV_ALLOW": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "lta": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "medical_allow": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "child_edu": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "uniform": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "hra": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc1": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc2": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc3": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc4": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "magazine": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "canteen": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "driver": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "guest": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "soft_furnishing": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "bnk_code": {
+            "maxLength": 6,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "bnk_led_no": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "left_status": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "period": {
+            "maxLength": 7,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pay_type": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "unioN_CONTR": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "welfare": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profcen_cd": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "bnk_acc_no": {
+            "maxLength": 16,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "ptax_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "prod_inct_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "var_da_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "extra_pf_flag": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fpf_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "attn_bonus_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "end_temp": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "start_prob": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "temp_period": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "arrear_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "lw_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "approve_by": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "approve_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "approve_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc5": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc6": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc7": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc8": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "misc9": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "super_Ann_Flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "slip_Total": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "voucher_Total": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pf": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "bonus": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "super_Ann": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "gratuity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "increment_Date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "increment_Cnt": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "incr_Percentage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "incr_Remark": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "esic": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pf_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "work_division": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "transfer_from": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "old_div": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "old_trf_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gratuty_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "desigcode": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "uaN_no": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "ctcpf": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PAY_MASTER": {
+        "type": "object",
+        "properties": {
+          "grade": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "basic": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fix_basic": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "da": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "var_DA": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "conv_allow": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "lta": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "medical_allow": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "child_edu": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "uniform": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "hra": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc1": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc2": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc3": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc4": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "magazine": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "canteen": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "driver": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "guest": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "soft_furnishing": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_basic": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_fix_basic": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_DA": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_var_DA": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_conv_allow": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_LTA": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_medical_allow": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_child_edu": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_uniform": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_HRA": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc1": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc2": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc3": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc4": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_magazine": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_canteen": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_driver": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_guest": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_soft_furnishing": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_basic": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_fix_basic": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_DA": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_var_DA": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_conv_allow": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_LTA": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_medical_allow": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_child_edu": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_uniform": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_HRA": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc1": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc2": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc3": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc4": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_magazine": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_canteen": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_driver": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_guest": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_soft_furnishing": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "leave_encash": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_leave_encash": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_leave_encash": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "ot_amt": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_ot_amt": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_ot_amt": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "profcen_cd": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_att_bonus": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_prod_inct": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "att_bonus": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_att_bonus": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc5": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc6": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc7": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc8": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "misc9": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc5": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc6": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc7": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc8": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "v_misc9": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc5": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc6": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc7": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc8": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_misc9": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "a_other_days_income": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonalMst": {
+        "type": "object",
+        "properties": {
+          "emp_no": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fname": {
+            "maxLength": 25,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "mname": {
+            "maxLength": 25,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "lname": {
+            "maxLength": 25,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dept_code": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "marital_status": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "join_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "addr1": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "addr2": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "addr3": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "addr4": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 40,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "blood_group": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "week_off": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "refer": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "cndt_no": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "short_name": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "desig_code": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "emp_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pan_no": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "profcen_cd": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "report_to": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "week_off1": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "taddr1": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "taddr2": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "taddr3": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "taddr4": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sign": {
+            "maxLength": 70,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "religion": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "drive_LIC": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "passport": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "reffered_by": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "no_child": {
+            "maxLength": 2,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "approve_flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tech_category": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "left_status": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "confirm_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "prob_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "end_temp": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "start_prob": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "temp_period": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "period": {
+            "maxLength": 7,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "salary_Det": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "passport_Valid_Dt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "notice_Period": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "resign_Dt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "rotation_Code": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "loc_Code": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "temp_Flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "temp_Flag_Date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reason_Of_Left": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "rotation_Start": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "no_Of_Punching": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "state": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "route_Id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "working_State": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "pin_No": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tPin_No": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tState": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "birth_Place": {
+            "maxLength": 40,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "qualification": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "prev_Experiance": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "tmS_Applicable": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "mobile_No": {
+            "maxLength": 21,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "canteen_Ded_Flag": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "proj_Code": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "advGL_Code": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "union_Code": {
+            "maxLength": 1,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "bond_Months": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bond_Amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "work_division": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "transfer_from": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "adhar_card_no": {
+            "maxLength": 12,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "gratuty_ID": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "olD_DIV": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "replacement_for": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "mediclaim_parent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "old_trf_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "emp_skill": {
+            "maxLength": 2,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TLogin": {
+        "type": "object",
+        "properties": {
+          "login_Name": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "login_Pwd": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter 'Bearer {your token}'",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

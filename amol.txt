@@ -1,0 +1,96 @@
+﻿1️⃣ "Controllers" should only handle HTTP requests (No database queries or business logic in controllers).
+2️⃣ "Service Layer" should contain business logic (Processing, validation, calculations, etc.).
+3️⃣ "Repository" Layer should handle all database queries (Use SQL queries inside repositories only).
+4️⃣ Use Dependency Injection (Never use new keyword to create services or repositories).
+5️⃣ Always Define Interfaces (For both services and repositories).
+6️⃣ Keep the Folder Structure Consistent (Every new feature should follow the same pattern).
+7️⃣ Return Standardized API Responses (Always return a response object with a status and message).
+8️⃣ Follow SOLID Principles (Especially Separation of Concerns).
+9️⃣ Never Hardcode Connection Strings (Always store in appsettings.json).
+10️⃣ Use Async/Await for All Database Calls (For better performance).
+
+
+
+Api - 
+1. employee full list with top 10, query based for Grid view
+2. Applicable_Income get list for Salary wages form. with fields status.
+3. Applicable_Income Insert Data of form. with Editable fields data. (Applicable modal under chnage modal reference).
+4. Salary Wages Full List for view salay wages list of Grid View.
+5. Update Salary Wages API.
+
+6.update salary wages details.
+7.update employee details.
+
+Api:
+get period by Division.
+
+pay_close order date decs
+
+
+period api
+
+
+Application income insert : Applicable_Income
+day Details insert : Day_MST
+day deduction insert : DEDUCTION
+
+  **********************************
+check in generated code : primary key and string lenth **********
+ 
+ Days Details Api :::::
+ Input == 
+ Division Code
+ Period Number
+
+ Check====
+
+ get from personal mst 
+ where status <> L
+ Not available data in Dayas detail with period number given
+ **************************
+
+
+
+
+grade wise payment details.Api/// 
+
+grade entry S or V // Slip or Voucher 
+
+
+/////Salery Wages :
+
+ 1.  Payroll > salary >  
+A2.  grid Pagination show > employee Y list > Update > Delete
+A3. New click > send Profcen_cd get Enable Api to show labels with textbox
+A4. Y not employee List help > select one 
+ 5.  which is S or V assign fields with this
+ 6.  calculate s - v combination textbox
+A7. Save Salary wages Api.
+A8. Update Get Salary Wages Api.
+A9. Delete salary wages details.
+
+//// PayMaster Api
+
+A1. get records of paymaster for pagiantion , delete , update . 
+A2. new click > get grade list which is not in paymaster > for dropdown
+A3. Called Profcen_code send and get labels Api (Again)
+3.  save with grade code.
+4.  update retrived data.
+5.  delete data. with condition.
+
+
+///////////////////////////////////////////// for genrate model /////////
+
+Scaffold-DbContext Name=DefaultConnection Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables DEDUCTION
+
+T4 you can modify EF Core T4 templates
+///////////////////////////////////////////
+4_7_25
+
+		[HttpPost("GetUpdate-PaymentDetails-GradeWise")]
+        [HttpDelete("Delete-PaymentDetails-GradeWise")]
+		[HttpPost("add-PaymentDetails-GradeWise")]
+		[HttpPost("add-PaymentDetails-GradeWise")] //update
+		[HttpGet("Fetch-Grade-PaymentDetails")]
+
+
