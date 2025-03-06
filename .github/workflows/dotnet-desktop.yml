@@ -75,8 +75,8 @@ jobs:
       run: dotnet restore $env:Solution_Name
 
     - name: Run Unit Tests  # ✅ Fix: Use correct test project path
-      run: dotnet test $env:Test_Project_Path --no-restore --verbosity normal
-
+      run: dotnet test Tests/Tests.csproj --no-restore --verbosity normal
+  
     - name: Build Solution
       run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration
       env:
